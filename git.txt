@@ -1,0 +1,9 @@
+1. git init
+2. git remote add origin <your_gitbut_ur> // eg. git remote add origin https://github.com/sagartmg2/baisakh-2
+3. optional // to check  // git remote -v 
+4. git status
+
+
+git hints
+    U - new files / untracked files
+    A - added // ready to be published / pushed
