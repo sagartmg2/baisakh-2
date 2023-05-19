@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <style>
+        /* 100 */
+        #black-border {
+            border: 1px solid;
+        }
+
+        .box {
+            border: 10px solid red;
+            padding: 50px
+        }
+
+        /* 010 */
+        .box {
+            border: 1px solid cyan;
+            padding: 20px
+        }
+
+
+        div {
+            border: 1px solid red;
+        }
+
+        div {
+            border: 5px solid green;
+        }
+
+        /* 001 */
+        div {
+            border: 20px solid green;
+        }
+
+        /* 121 */
+        div.box.red#black-border {
+            border: 10px solid red;
+        }
+
+        /* 113 */
+        html body div.box#black-border {
+            border: 1px solid black;
+        }
+
+        /* 111 */
+        div.box#black-border {
+            border: 10px solid red;
+        }
+
+        /* 101 */
+        div#black-border {
+            border: 10px solid black;
+        }
+
+        /* 100 */
+        #black-border {
+            border: 1px solid red;
+        }
+
+        /* 010 */
+        div.box {
+            border: 10px dashed rgb(128, 0, 21) !important;
+        }
+
+        /* 000 */
+        div {
+            border: 10px dashed green !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="">
+                    <!-- <a href="#" style="color:red;text-decoration:underline; text-underline-offset: 4px;">Home</a> -->
+                    <a href="./index.html" class="">Home</a>
+                </li>
+                <li class=""><a href="./about.html">about</a></li>
+                <li class=""><a href="./courses/mern.html">mern</a></li>
+                <li class=""><a href="./courses/current/python.html">python</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Score</h1>
+    <p> !important > inline > id > class > tag (000) </p>
+
+    <div>
+        simple divs
+    </div>
+
+    <div class="box red" id="black-border" style="border:1px solid black;">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsum autem quos adipisci repellendus
+            officia omnis maxime veritatis reprehenderit laboriosam. Unde eos adipisci alias. Ut est cupiditate
+            doloremque rerum enim!
+        </p>
+    </div>
+
+   
+
+
+
+</body>
+
+</html>

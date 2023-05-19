@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        /* css syntax
+
+        <slector>{
+            <css-property> : <css-value>;
+        }
+            selector
+                - element/ tag selctor
+                - id 
+
+        */
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid;
+            padding: 5px 20px 5px 20px
+        }
+
+        div {
+            border: 1px solid;
+            padding: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 15px;
+            margin-right: 15px;
+            /* margin: 30px; */
+            /* margin: top right bottom left */
+            margin: 30px 15px 30px 15px;
+            text-align: justify
+        }
+
+        /* #g-total {
+            text-align: center;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        
+        #t-duration{
+            text-align: center;
+            font-weight: bold;
+            text-transform: capitalize;
+        } */
+
+        .text-center-bold {
+            text-align: center;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        /* DRY - donot repeat yourslef  */
+        /* a{
+            color:gray;            
+            text-decoration: none;
+            text-transform: capitalize;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">about</a>
+
+                </li>
+                <!-- <a href="./courses/mern.html" style="color:red;text-decoration:underline; text-underline-offset: 4px;">mern</a> -->
+                <li>
+                    <a href="./courses/mern.html" class="active-link">mern</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <h1 class="text-center-bold">mern class</h1>
+    <hr>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, doloribus eum. Assumenda aspernatur
+        necessitatibus ea? Modi, nemo perferendis tempora similique, incidunt enim rerum error earum voluptate doloribus
+        vero maxime eum.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, doloribus eum. Assumenda
+        aspernatur necessitatibus ea? Modi, nemo perferendis tempora similique, incidunt enim rerum error earum
+        voluptate doloribus vero maxime eum.
+    </div>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th style="border: 1px solid ;">Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Totoal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> mouse</td>
+                <td> 1</td>
+                <td> 100</td>
+                <td> 100</td>
+            </tr>
+            <tr>
+                <td> keyboard</td>
+                <td> 2</td>
+                <td> 100</td>
+                <td> 200</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="text-center-bold" id="g-total" colspan="3">Grand Total</td>
+                <td>300</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <hr>
+    <table style="border: 1px solid ;">
+        <thead>
+            <tr>
+                <th style="border:1px solid">Name</th>
+                <th style="border:1px solid">teacher</th>
+                <th style="border:1px solid">duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>html</td>
+                <td>XYZ</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>css</td>
+                <td>XYZ</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="text-center-bold" colspan="2" id="t-duration">total Duration</td>
+                <td>15</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
