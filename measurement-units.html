@@ -13,9 +13,34 @@
             width: 100px;
             width: 50%;
         }
-        .inner-box{
+
+        .inner-box {
             background-color: teal;
         }
+
+        /* .parent{
+            display: none;
+        }
+       .parent.second  {
+            color: red
+        } */
+
+        .parent{
+            margin-top:16px;
+            margin-top:1em;
+            margin-top:1rem;
+            height: 200px;
+            width: 200px ;
+            background-color: cyan;
+            background-color: wheat;
+        }
+
+        .child{
+            background-color: teal;
+            height: 50%;
+            width: 50%;
+        }
+
     </style>
 </head>
 
@@ -23,20 +48,42 @@
 
     <h2>measurement units</h2>
     <ul>
-        <li>px</li>
-        <li>%</li>
+        <li class="first">px</li>
+        <li class="second">%</li>
         <li>em</li>
         <li>rem</li>
         <li>vh</li>
         <li>vw</li>
     </ul>
 
+    <!-- <div class="parent">
+        <div class="child">
+            first parent firstchild
+        </div>
+    </div>
+
+
+    <div class="parent second">
+        <div class="child">
+            second parent ->child
+        </div>
+    </div> -->
+
 
     <div class="box">
         <div class="inner-box box">
         </div>
-
     </div>
+
+    <div class="parent">
+        <div class="child">
+            child
+        </div>
+        <div class="child">
+            child
+        </div>
+    </div>
+
 
 </body>
 
