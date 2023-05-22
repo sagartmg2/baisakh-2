@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
         .box {
             border: 1px solid;
             height: 100px;
@@ -25,38 +30,63 @@
             color: red
         } */
 
-        .parent{
-            margin-top:16px;
-            margin-top:1em;
-            margin-top:1rem;
+        .body {
+            font-size: 32px;
+        }
+
+        html {
+            font-size: 18px;
+        }
+
+
+        .parent {
+            margin-top: 32px;
+            margin-top: 1em;
+            margin-top: 1rem;
+            margin-top: 10px;
             height: 200px;
-            width: 200px ;
+            width: 200px;
             background-color: cyan;
             background-color: wheat;
         }
 
-        .child{
+        .child {
+            padding: 1rem;
             background-color: teal;
             height: 50%;
             width: 50%;
         }
 
+        .full-height {
+            height: 100vh;
+            width: 100vw;
+            border: 10px solid;
+        }
+        .hidden{
+            /* display: none; */
+        }
     </style>
 </head>
 
 <body>
+    <div class="hidden">
 
-    <h2>measurement units</h2>
-    <ul>
-        <li class="first">px</li>
-        <li class="second">%</li>
-        <li>em</li>
-        <li>rem</li>
-        <li>vh</li>
-        <li>vw</li>
-    </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sed error ratione fugiat corrupti quae nobis
+            et
+            eum id inventore, numquam reiciendis eius quibusdam repudiandae similique deserunt quod labore. Temporibus.
+        </p>
 
-    <!-- <div class="parent">
+        <h2>measurement units</h2>
+        <ul>
+            <li class="first">px</li>
+            <li class="second">%</li>
+            <li>em</li>
+            <li>rem</li>
+            <li>vh</li>
+            <li>vw</li>
+        </ul>
+
+        <!-- <div class="parent">
         <div class="child">
             first parent firstchild
         </div>
@@ -70,18 +100,28 @@
     </div> -->
 
 
-    <div class="box">
-        <div class="inner-box box">
+        <div class="box">
+            <div class="inner-box box">
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="parent">
+                <div class="child">
+                    child
+                </div>
+                <div class="child">
+                    child
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="parent">
-        <div class="child">
-            child
-        </div>
-        <div class="child">
-            child
-        </div>
+
+
+    <div class="box full-height">
+        conent
     </div>
 
 

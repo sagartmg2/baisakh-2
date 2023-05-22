@@ -6,6 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=], initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .child {
+            padding: 1rem;
+            border: 1px solid black;
+        }
+
+        /* .child.first {
+            color: red;
+        } */
+
+        /* .parent :first-child{
+            color:red;
+        } */
+
+        .parent :first-child {
+            background-color: cyan;
+        }
+
+
+        .child :first-child {
+            background-color: red;
+        }
+
+        .child:last-child {
+            background-color: red;
+        }
+
+        .child:nth-child(3) {
+            background-color: orange;
+        }
+
+        .parent :nth-child(2n) {
+            background-color: violet;
+        }
+
+        h1:hover {
+            color: red;
+        }
+
+        button:focus {
+            background-color: aqua;
+        }
+
+        /* .contents .first{
+            color:red;
+        } */
+
+        /* .contents :first-child{
+            color:red;
+        } */
+
+        /* .contents :not(.first){
+            color:red;
+        } */
+
+        .contents :not(:first-child) {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,6 +74,61 @@
             first-child
         </li>
     </ul>
+
+
+    <div class="parent">
+        <div class="child first">one
+            <span>-1</span>
+            <span>-2</span>
+        </div>
+        <div class="child">two</div>
+        <div class="child ">three</div>
+        <div class="child">four</div>
+        <div class="child">fifth</div>
+    </div>
+
+    <div class="contents">
+        <p class="first">
+            Lorem ipsum dolor sit amet .
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet .
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet .
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet .
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet .
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet .
+        </p>
+    </div>
+
+    <hr>
+    <button>
+        register
+    </button>
+
+    <hr>
+    <form>
+        <div>
+            <label for="">username</label>
+            <input placeholder="username"  />
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" id="password"  placeholder="password" />
+        </div>
+        <div>
+            <label >address</label>
+            <input type="text"  />
+        </div>
+        <button>login</button>
+    </form>
 
 </body>
 
