@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* padding: 0; */
+        }
+
+        header {
+            display: none;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .first ul {
+            display: inline-block;
+        }
+
+        .first li {
+            display: inline;
+        }
+
+        .flex-box {
+            background-color: wheat;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            flex-direction: column;
+        }
+
+        .flex-item {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="first">
+        <nav>
+            <span class="logo">LOGO</span>
+            <ul>
+                <li><a href="./home"> <span>home</span></a></li>
+                <li><a href="./home">about</a></li>
+                <li><a href="./home">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <header class="second">
+        <nav>
+            <span class="logo">LOGO</span>
+            <ul>
+                <li><a href="./home"> <span>home</span></a></li>
+                <li><a href="./home">about</a></li>
+                <li><a href="./home">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul>
+        <li>
+            <span>justify-contenet</span>
+            <ul>
+                <li>start</li>
+                <li>end</li>
+                <li>center</li>
+                <li>space-between</li>
+            </ul>
+        </li>
+        <li>
+            <span>align-items</span>
+            <ul>
+                <li>center</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="flex-box">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+
+</body>
+
+</html>
