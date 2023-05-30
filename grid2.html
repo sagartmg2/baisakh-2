@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid-box {
+            height: 400px;
+            width: 400px;
+            background-color: antiquewhite;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            display: grid;
+            /* gap: 1rem; */
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr)
+        }
+
+        .box {
+            /* height:100% ;
+            width: 100%; */
+            border: 1px solid;
+        }
+
+        .box:first-child{
+            background-color: red;
+            grid-column-start: 3 ;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-box">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+
+</body>
+
+</html>
