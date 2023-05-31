@@ -31,6 +31,18 @@ html {
 
 /* global css */
 
+.container {
+    padding-left: .75rem;
+    padding-right: .75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+header nav {
+    padding-top: 2.4rem;
+}
+
 header nav,
 header ul,
 header .logo-wrapper {
@@ -46,6 +58,101 @@ header .logo-wrapper {
     font-weight: 600;
     /* color: #0B132A; */
 }
+
 .logo-wrapper .extrabold {
     font-weight: 900;
+}
+
+.sidebar{
+    display: none;
+
+}
+
+
+.btn{
+    border: 1px solid #F54747;
+    padding: .5rem 1rem ;
+    border-radius: 1rem;
+    color:#F54747;
+}
+
+.btn:hover{
+    background-color: #F54747;
+    color:white;
+    box-shadow : 5px 5px 21px -5px #F54747;
+}
+
+
+.banner {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+}
+
+/* .banner>* {
+    width: 50%;
+} */
+
+.banner article * {
+    margin-top: 1rem;
+}
+
+.banner h1{
+    font-size: 3rem;
+}
+
+.banner  button {
+    background-color: #F54747;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow : 5px 5px 21px -5px #F54747;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.banner img{
+    object-fit: contain;
+}
+
+
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+    .sidebar{
+        display: initial;
+    }
+    .hamburger{
+        display: none;
+    }
+
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width:1400px) {
+    .container {
+        max-width: 1320px;
+    }
 }
