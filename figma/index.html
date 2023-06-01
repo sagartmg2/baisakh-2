@@ -21,7 +21,13 @@
                 <img class="logo" src="./assets/images/logo.png" />
                 <p>Lasles <span class="extrabold">VPN</span></p>
             </div>
-            <div class="sidebar">
+            <div class="sidebar" id="sidebar">
+                <!-- <p class="close"
+                onclick = "document.getElementById('sidebar').style.display='none'"
+                >X</p> -->
+                <p class="close"
+                onclick = "document.getElementById('sidebar').classList.toggle('open')"
+                >X</p>
                 <ul>
                     <li><a href="#">about</a></li>
                     <li><a href="#">features</a></li>
@@ -34,21 +40,30 @@
                     <li> <a class="btn">sign Up </a></li>
                 </ul>
             </div>
-            <img class="hamburger" src="./assets/images/menu.png" alt="">
+            <!-- <img 
+            onclick="document.getElementById('sidebar').style.display='flex'"
+            class="hamburger" src="./assets/images/menu.png" alt=""> -->
+            <img 
+            onclick = "document.getElementById('sidebar').classList.toggle('open')"
+            class="hamburger" src="./assets/images/menu.png" alt="">
         </nav>
     </header>
 
     <section class="banner container">
         <!-- <p>TEST</p> -->
         <article>
-                <h1>Want anything to be easy with LaslesVPN.</h1>
-                <p>Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from
-                    us.</p>
-                <button>Get Started</button>
+            <h1>Want anything to be easy with LaslesVPN.</h1>
+            <p>Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from
+                us.</p>
+            <button>Get Started</button>
         </article>
         <img src="./assets/images/Illustration 1.png" alt="banner">
 
     </section>
+
+    <script>
+
+    </script>
 
 
 
