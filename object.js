@@ -119,9 +119,55 @@ console.log(teacher2.name + "'s number is " + teacher2.phone);
 
 let firstName = "ram"
 let lastName = "sharma"
+lastName = "Bdr"
 /* his name is ram sharma.. */
 
 let fullName = firstName + " " + lastName
 
 console.log("his name is " + fullName);
+
+
+
+
+let myLaptop = {
+    brand: "acer",
+    generation: "I5",
+    processor: "I5",
+    price:10000
+}
+
+
+console.log("befor", myLaptop.processor);
+
+myLaptop.processor = "I7"
+
+console.log("after", myLaptop.processor);
+console.log("price", myLaptop.price);
+
+
+// let colors = ["white", "orange", "teal"]
+let teal = {
+    hexValue: "#AAAAA",
+    color: "teal",
+    color: "teal-change",
+    Color: "TEAL",
+}
+
+let colors = [
+    {
+        color: "white",
+        hexValue: "#FFFFFF"
+    },
+    {
+        color: "orange",
+        hexValue: "#FFDEF"
+    },
+    teal
+]
+
+console.log(teal.hexValue);
+console.log(teal.color);
+console.log(teal.Color);
+
+
 
