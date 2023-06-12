@@ -60,7 +60,11 @@ Operator
 
     Arthematic Operator  + - * / % 
        % -> modulous // returns remainder 
-       
+
+
+            10 /3   // 3.3333
+            10 % 3   // 1   -> 1 is remainder
+
      Comparisoin Opertor
       < 
       > 
