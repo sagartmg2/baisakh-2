@@ -556,5 +556,4 @@ let products = [
 
 for (let index = 0; index < products.length; index++) {
     console.log(` price of ${products[index].title} is  $${products[index].price} `)
-
 }
