@@ -88,8 +88,6 @@ function sum(num1, num2) {
 // console.log("sum is", sum(10, 2))
 
 
-
-
 /* hoisting */
 
 

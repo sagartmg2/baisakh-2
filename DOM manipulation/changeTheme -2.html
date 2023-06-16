@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+
+        #light-btn{
+            display: none;
+        }
+
+        .dark #light-btn{
+            display: initial;
+        }
+
+        .dark #dark-btn{
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body id="body" class="">
+    <h1>Event Listener</h1>
+    <button onclick="toggleTheme()" id="dark-btn">Dark mode </button>
+    <button onclick="toggleTheme()" id="light-btn">Light mode </button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint eligendi temporibus, officiis rerum
+        accusamus pariatur, facilis sapiente totam porro quam cum eos magnam recusandae tenetur eius labore? Delectus,
+        saepe!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint eligendi temporibus, officiis rerum
+        accusamus pariatur, facilis sapiente totam porro quam cum eos magnam recusandae tenetur eius labore? Delectus,
+        saepe!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint eligendi temporibus, officiis rerum
+        accusamus pariatur, facilis sapiente totam porro quam cum eos magnam recusandae tenetur eius labore? Delectus,
+        saepe!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint eligendi temporibus, officiis rerum
+        accusamus pariatur, facilis sapiente totam porro quam cum eos magnam recusandae tenetur eius labore? Delectus,
+        saepe!</p>
+
+</body>
+<script>
+
+    function toggleTheme() {
+        document.getElementById("body").classList.toggle("dark")
+    }
+
+
+    // function toDarkTheme() {
+    //     document.getElementById("body").classList.add("dark")
+    // }
+
+    // function toLightTheme() {
+    //     document.getElementById("body").classList.remove("dark")
+    // }
+</script>
+
+</html>

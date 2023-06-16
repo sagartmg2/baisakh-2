@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <h1>Event Listener</h1>
+    <button onclick="toDarkTheme()">Dark mode </button>
+    <button onclick="toLightTheme()">Light mode </button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint eligendi temporibus, officiis rerum
+        accusamus pariatur, facilis sapiente totam porro quam cum eos magnam recusandae tenetur eius labore? Delectus,
+        saepe!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint eligendi temporibus, officiis rerum
+        accusamus pariatur, facilis sapiente totam porro quam cum eos magnam recusandae tenetur eius labore? Delectus,
+        saepe!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint eligendi temporibus, officiis rerum
+        accusamus pariatur, facilis sapiente totam porro quam cum eos magnam recusandae tenetur eius labore? Delectus,
+        saepe!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint eligendi temporibus, officiis rerum
+        accusamus pariatur, facilis sapiente totam porro quam cum eos magnam recusandae tenetur eius labore? Delectus,
+        saepe!</p>
+
+</body>
+<script>
+    
+    function toDarkTheme() {
+        console.log("changing.. to dark");
+        document.getElementById("body").style.backgroundColor = "black"
+        document.getElementById("body").style.color = "white"
+    }
+
+    function toLightTheme() {
+        console.log("changing.. to dark");
+        document.getElementById("body").style.backgroundColor = "white"
+        document.getElementById("body").style.color = "black"
+    }
+</script>
+
+</html>
