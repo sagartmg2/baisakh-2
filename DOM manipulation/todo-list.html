@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        hint:
+            innerHTML
+
+
+            createElement()
+            appendChild()
+    </pre>
+
+    <h1>todo lsit</h1>
+    <hr>
+    <form onsubmit="addTodo(event)">
+        <input type="text" id="title" value="">
+        <button>add</button>
+    </form>
+    <hr>
+    <ul id="todo-list">
+        <li>css</li>
+        <li>html</li>
+    </ul>
+
+    <script>
+        const addTodo = (event) => {
+            // console.log(event)
+            event.preventDefault() // to prevent page refresh on form submit
+            let value = document.getElementById("title").value
+            console.log("add ", value)
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
