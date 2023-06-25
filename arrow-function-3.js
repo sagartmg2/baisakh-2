@@ -43,3 +43,9 @@ let evenNumbers = []  // [2,4,10,20] // filter from above numbers varaiable
 
 // .filter 
 // .find 
+
+
+for(let index = 0;i<numbers.length;i++){
+    console.log(numnbers[index])
+}
+

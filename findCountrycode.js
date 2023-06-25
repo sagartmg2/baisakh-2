@@ -1223,7 +1223,7 @@ let countries = [
 
  */
 
-const findCountryCode = (searchTerm) => {
+/* const findCountryCode = (searchTerm) => {
     for (let index = 0; index < countries.length; index++) {
         // "check if name matches.."
         let country = countries[index]
@@ -1233,6 +1233,19 @@ const findCountryCode = (searchTerm) => {
         }
         console.log(index)
     }
+} */
+const findCountryCode = (searchTerm) => {
+    // countries.forEach((country, index) => {
+    //     if (country.name.toLowerCase() == searchTerm.toLowerCase()) {
+    //         console.log("code is ", country.code, "on index", index)
+    //     }
+    // })
+
+    let country = countries.find((el) =>{
+        return el.name.toLowerCase() == searchTerm.toLowerCase()
+    })
+    console.log(country)
+
 }
 
 findCountryCode("nepal")
