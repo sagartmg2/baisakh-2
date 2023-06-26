@@ -45,11 +45,11 @@
     </pre>
 
     <form onsubmit="addNewItem(event)">
-        <input placeholder="item" id="item" name="item">
-        <input placeholder="quanity" id="quanity" name="quanity">
-        <input type="submit">
+        <input placeholder="item" id="item" name="item" type="text">
+        <input placeholder="quanity" id="quanity" name="quanity" type="number">
+        <!-- <input type="submit"> -->
+        <button>submit</button>
     </form>
-
 
     <table>
         <thead>
@@ -65,21 +65,47 @@
     <script>
         console.log("js connected")
 
-        let items = [
-            { title: "apple", quanity: "100" },
+        let items = []
+        let storedItems = localStorage.getItem("items")  // stringified value
+        storedItems = JSON.parse(storedItems)
+        items = storedItems || []
+
+        console.log({items})
+
+        convertItemsToTable()
+
+
+        /* 
+        [
+            {title: 'apple', quanity: '10',stakeholder:["ram","shyam"]},
+            {title: 'lg', quanity: '100'}
         ]
+        */
+
 
         const addNewItem = (event) => {
+            console.log("new item added..")
             event.preventDefault()
-            items.push({
+
+            console.log(event.target.item.value)
+            console.log(event.target.quanity.value)
+            let newItem = {
                 title: event.target.item.value,
                 quanity: event.target.quanity.value,
+            }
 
-            })
+            items.push(newItem)
+            localStorage.setItem("items", JSON.stringify(items))
 
-            console.log(items)
+            convertItemsToTable() 
 
+        }
+
+
+        function convertItemsToTable() {
             let liTagsStr = ""
+            /*   ` <tr><td>lg</td><td>10</td></tr>   <tr><td>apple</td><td>20</td></tr>        ` */
+
 
             items.forEach(item => {
                 liTagsStr = liTagsStr + `
@@ -95,8 +121,8 @@
             })
 
             document.getElementById("list").innerHTML = liTagsStr
-
         }
+
     </script>
 </body>
 
