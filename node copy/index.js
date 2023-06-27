@@ -8,6 +8,14 @@
         
 */
 /* node modules
+        CommonJS module system VS ESMOdule system
+            commonjs
+                - module.exports
+                - require
+            esmodulesystme
+                -export 
+                -import
+
         - core module
             - path 
             - fs
@@ -15,6 +23,8 @@
         - third party modules   
             eg: brcypt 
         - local module
+
+
 */
 
 const createProduct = () => {
@@ -35,7 +45,9 @@ const createProduct = () => {
 // const auth = require("./auth")
 // const {signup,login} = auth
 
-const {signup,login} = require("./auth")
+// const {signup,login} = require("./auth")
+
+import { signup, login } from "./auth.js"
 signup()
 login()
 

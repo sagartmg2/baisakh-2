@@ -10,6 +10,7 @@ function dobule(num){ // let num = 10 // block scoped variable
 function triple(num){ // let num = 3 // block scope variable
     console.log("triple",num*3)
 } 
+
 triple(3)
 
 dobule(10)
